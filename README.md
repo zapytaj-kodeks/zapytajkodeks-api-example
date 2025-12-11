@@ -29,3 +29,22 @@ node stream.js "Jeżeli mam kilku pełnomocników w urzędzie, to komu właściw
 ```
 
 The script will stream the response in real-time and display sources at the end.
+
+## Load Testing
+
+Test the non-streaming API with multiple requests:
+
+```bash
+node test.js [count] [concurrency]
+```
+
+- `count` - number of requests (default: 100)
+- `concurrency` - parallel requests (default: 5)
+
+### Example
+
+```bash
+node test.js 100 10
+```
+
+This will send 100 requests, 10 at a time, and report success/failure stats.
