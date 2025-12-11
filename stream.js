@@ -7,7 +7,7 @@
 
 import 'dotenv/config';
 
-const API_URL = "http://localhost:3000/v1/analysis/stream";
+const API_URL = "https://api.zapytajkodeks.pl/v1/analysis/stream";
 const API_KEY = process.env.ZAPYTAJKODEKS_API_KEY;
 
 if (!API_KEY) {
